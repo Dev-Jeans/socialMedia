@@ -1,0 +1,149 @@
+/* botones redes sociales*/
+:root {
+    --themecolor: #5b4133;
+    --themecolorhvr: #573c2d;
+    --themecolorbrd: #433025;
+    --themecolorsdw: #30221a;
+    --themecolorsecondary: #e98f40;
+    --themecolorsecondaryhvr: #d87c2c;
+    --themecolorsecondarytrans: #faae6b;
+    --themecolorsecondarytrans2: #e98f40bd;
+    --themecolortrans: #533729c0;
+    --themecolortrans2: #53372910;
+
+    --themegray: #cacaca;
+    --themegraydark: #58595C;
+    --themelightborder: #e5e5e5;
+    --themebgvitrina: #F4F2F5;
+
+    --danger: #ff4c4c!important;
+    --success: #63b194!important;
+}
+
+
+.btn-theme-2 {
+    background: transparent;
+    border: 1px solid var(--themecolorsecondary);
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 5px 10px;
+    color: var(--themecolorsecondary);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-theme-2:hover {
+    border-color: var(--themecolorsecondary);
+    background-color: var(--themecolorsecondary);
+    color: white;
+}
+
+
+.btn-theme-2:disabled {
+    background-color: var(--themecolorsecondarytrans);
+    color: white;
+}
+
+.btn-modal-login {
+    width: 100%;
+    font-size: 14px;
+}
+
+.line-login-divider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.line-login-divider hr {
+    background: #CCCCCC;
+    border: 0;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: visible;
+    text-align: center;
+    width: 98.5%;
+}
+
+.line-login-divider hr:after {
+    /* background: #f4f4f4; */
+    background-color: white;
+    display: inline-block;
+    font-size: 13px;
+    padding: 0 0.6em;
+    position: relative;
+    top: -1.0em;
+    content: "O ingresa con";
+}
+
+
+
+.btn-theme-facebook {
+    background: #1877f2;
+    border: 1px solid #1877f2;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 5px 10px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-theme-facebook:hover {
+    border-color: #1877f2;
+    background: transparent;
+    color: #1877f2;
+}
+
+
+.btn-theme-facebook:disabled {
+    background-color: var(--themecolorsecondarytrans);
+    color: white;
+}
+
+.btn-theme-google {
+    background: #f44336;
+    border: 1px solid #f44336;
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 5px 10px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-theme-google:hover {
+    border-color: #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.btn-theme-google:disabled {
+    background-color: var(--themecolorsecondarytrans);
+    color: white;
+}
+
+.line-login-divider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.line-login-divider hr {
+    background: #CCCCCC;
+    border: 0;
+    height: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: visible;
+    text-align: center;
+    width: 98.5%;
+}
+
+.line-login-divider hr:after {
+    /* background: #f4f4f4; */
+    background-color: white;
+    display: inline-block;
+    font-size: 13px;
+    padding: 0 0.6em;
+    position: relative;
+    top: -1.0em;
+    content: "O ingresa con";
+}
+/**/

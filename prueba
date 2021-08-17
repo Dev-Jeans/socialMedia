@@ -1,0 +1,57 @@
+var app = new Vue({
+    el: '#app',
+    data: {
+        form_email: '',
+        form_password:'',
+    },
+    methods: {
+        SubmitLogin(){
+            console.log(this.form_email);
+            console.log(this.form_password);
+        },
+        async logInWithFacebook() {
+            // await this.loadFacebookSDK(document, "script", "facebook-jssdk");
+            // await this.initFacebook();
+            window.FB.login(function(response) {
+            //   if (response.authResponse) {
+            //     alert("You are logged in &amp; cookie set!");
+            //   } else {
+            //     alert("User cancelled login or did not fully authorize.");
+            //   }
+            if (response.status === 'connected') {
+                console.log("sesion inciciada");    
+            }else{
+                console.log("sesion no iniciada");
+            }
+
+            });
+            return false;
+          },
+
+        
+        async initFacebook() {
+            window.fbAsyncInit = function() {
+              window.FB.init({
+                appId: "3124447344451970", //You will need to change this
+                cookie: true,
+                xfbml: true,
+                version: "v11.0"
+              });
+            };
+        },
+        async loadFacebookSDK(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);;
+        },
+    },
+    mounted() {},
+    created() {
+        this.loadFacebookSDK(document, "script", "facebook-jssdk");
+        this.initFacebook();
+    },
+    updated() {},
+    computed: {}
+})
